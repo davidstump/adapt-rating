@@ -1,16 +1,17 @@
 {
-  "name": "adapt-rating",
-  "version": "0.1.0",
-  "framework": "^2.0.11",
-  "homepage": "git@github.com:davidstump/adapt-rating.git",
-  "issues": "https://github.com/davidstump/adapt-rating/issues",
-  "displayName" : "Rating",
-  "component" : "rating",
-  "description": "A rating component with images",
-  "main": "/js/adapt-rating.js",
-  "keywords": [
-    "adapt-plugin",
-    "adapt-component"
-  ],
-  "license": "GPLv3"
+    "name": "adapt-rating",
+    "repository": "git@github.com:davidstump/adapt-rating.git",
+    "framework": "^2.0.11",
+    "version": "0.1.0",
+    "homepage": "git@github.com:davidstump/adapt-rating.git",
+    "issues": "https://github.com/davidstump/adapt-rating/issues",
+    "displayName": "Rating",
+    "component": "rating",
+    "description": "A rating component with images",
+    "main": "/js/adapt-rating.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPLv3"
 }
