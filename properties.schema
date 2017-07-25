@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "This is a graphical multiple choice question. Once you have selected an option, select the submit button below.",
+      "default": "This is a graphical multiple choice rating question. Once you have selected an option, select the submit button below.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
