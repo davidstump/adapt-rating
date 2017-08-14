@@ -2,7 +2,7 @@
     "name": "adapt-rating",
     "repository": "git@github.com:davidstump/adapt-rating.git",
     "framework": "^2.0.11",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "homepage": "git@github.com:davidstump/adapt-rating.git",
     "issues": "https://github.com/davidstump/adapt-rating/issues",
     "displayName": "Rating",
