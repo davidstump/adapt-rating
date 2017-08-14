@@ -95,11 +95,25 @@ define(function(require) {
             }
         },
 
-        // hack for IE8
-        forceChangeEvent: function(event) {
+        /**
+        * used by adapt-contrib-spoor to get the user's answers in the format required by the cmi.interactions.n.student_response data field
+        * returns the user's answers as a string in the format "1,5,2"
+        */
+        getResponse:function() {
+            var selected = _.where(this.model.get('_items'), {'_isSelected':true});
+            var selectedIndexes = _.pluck(selected, '_index');
+            // indexes are 0-based, we need them to be 1-based for cmi.interactions
+            for (var i = 0, count = selectedIndexes.length; i < count; i++) {
+                selectedIndexes[i]++;
+            }
+            return selectedIndexes.join(',');
+        },
 
-            $("#" + $(event.currentTarget).closest("label").attr("for")).change();
-
+        /**
+        * used by adapt-contrib-spoor to get the type of this question in the format required by the cmi.interactions.n.type data field
+        */
+        getResponseType:function() {
+            return "rating";
         }
 
     }, {
