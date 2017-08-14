@@ -1,5 +1,5 @@
   define([
-    'coreJS/adapt',
+    'core/js/adapt',
     'components/adapt-contrib-gmcq/js/adapt-contrib-gmcq',
     './ratingView'
 ], function(Adapt, Gmcq, RatingView) {
