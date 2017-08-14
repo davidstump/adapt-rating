@@ -100,10 +100,6 @@ define(function(require) {
 
             $("#" + $(event.currentTarget).closest("label").attr("for")).change();
 
-        },
-        
-        getResponseType:function() {
-            return "rating";
         }
 
     }, {
