@@ -1,10 +1,9 @@
 define([
     'coreJS/adapt',
-    'components/adapt-contrib-mcq/js/adapt-contrib-mcq',
-    './ratingView'
-], function(Adapt, Mcq, RatingView) {
+    'components/adapt-contrib-mcq/js/adapt-contrib-mcq'
+], function(Adapt, Mcq) {
 
-    var Rating = Mcq.view.extend({
+    var RatingView = Mcq.view.extend({
 
         events: {
             'focus .gmcq-item input': 'onItemFocus',
@@ -71,6 +70,10 @@ define([
                 this.$el.removeClass('gmcq-column-layout');
                 this.$('.gmcq-item').css('width', '');
             }
+        }, 
+        
+        getResponseType:function() {
+            return "rating";
         }
 
     }, {
